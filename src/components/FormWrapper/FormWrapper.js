@@ -4,7 +4,7 @@ import Form from "../Form/Form";
 
 export default function FormWrapper(props) {
     return (
-        <div className="formWrapper_Form">
+        <div className="formWrapper_form">
             <Form />
         </div>
     );

@@ -5,10 +5,10 @@ import FormWrapper from "./components/FormWrapper/FormWrapper";
 function App() {
   return (
     <div className="formTemplate">
-        <div className="formTemplate_ImagePage">
+        <div className="formTemplate_imagePage">
             <ImagePage />
         </div>
-        <div className="formTemplate_FormWrapper">
+        <div className="formTemplate_formWrapper">
             <FormWrapper />
         </div>
     </div>
