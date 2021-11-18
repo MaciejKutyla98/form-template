@@ -1,0 +1,37 @@
+.formTemplate {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
+
+    &_imagePage {
+        width: 100%;
+        flex: 1;
+        order: 1;
+        justify-content: space-around;
+
+        @media (min-width: 900px) {
+            margin: 32px;
+            flex: 1;
+            width: 33%;
+        }
+    }
+
+    &_formWrapper {
+        background-color: white;
+
+        height: 100%;
+        flex: 1;
+        order: 2;
+        justify-content: space-around;
+
+        @media (min-width: 900px) {
+            flex: 2;
+            width: 66%;
+        }
+    }
+}

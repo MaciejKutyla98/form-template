@@ -1,0 +1,50 @@
+.form {
+  padding: 16px;
+  color: #373D40;
+
+  &_name {
+
+  }
+
+  &_gender {
+
+    &_text {
+
+    }
+
+    &_buttons {
+
+      &_male, &_female {
+        background-color: #F5F8F9;
+        border-radius: 16px;
+        padding: 8px;
+      }
+
+    }
+  }
+
+  &_membership {
+
+
+    &_buttons {
+
+      &_img {
+        background-color: #C7C7C7;
+        border-radius: 16px;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+  padding: 8px;
+}
