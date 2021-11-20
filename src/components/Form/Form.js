@@ -24,13 +24,13 @@ export default function Form(props) {
                     Gender
                 </span>
                 <div className="form_gender_buttons">
-                    <label>
+                    <label className="form_gender_buttons_label">
+                        <input type="radio" value="Male" name="gender" id="male"/> Male
                         <img src={male} alt="male" width="20px" height="20px" className="form_gender_buttons_male"/>
-                        <input type="radio" value="Male" className="gender" id="male"/> Male
                     </label>
-                    <label>
+                    <label className="form_gender_buttons_label">
+                        <input type="radio" value="Female" name="gender" id="female" /> Female
                         <img src={female} alt="female" width="20px" height="20px" className="form_gender_buttons_female"/>
-                        <input type="radio" value="Female" className="gender" id="female" /> Female
                     </label>
                 </div>
             </div>
@@ -79,15 +79,15 @@ export default function Form(props) {
                 <div className="form_membership_buttons">
                     <label>
                         <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
-                        <input type="radio" value="Classic" className="membership" id="classic"/> Classic
+                        <input type="radio" value="Classic" name="membership" id="classic"/> Classic
                     </label>
                     <label>
                         <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
-                        <input type="radio" value="Silver" className="membership" id="silver" /> Silver
+                        <input type="radio" value="Silver" name="membership" id="silver" /> Silver
                     </label>
                     <label>
                         <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
-                        <input type="radio" value="Gold" className="membership" id="gold"/> Gold
+                        <input type="radio" value="Gold" name="membership" id="gold"/> Gold
                     </label>
                 </div>
             </div>

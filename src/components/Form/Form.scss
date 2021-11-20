@@ -4,6 +4,13 @@
 
   &_name {
 
+    &_text {
+
+    }
+
+    &_input {
+
+    }
   }
 
   &_gender {
@@ -13,6 +20,13 @@
     }
 
     &_buttons {
+      display: flex;
+
+      &_label {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
 
       &_male, &_female {
         background-color: #F5F8F9;
@@ -23,8 +37,44 @@
     }
   }
 
+  &_email {
+
+    &_text {
+
+    }
+
+    &_input {
+
+    }
+  }
+
+  &_mobile {
+
+    &_text {
+
+    }
+
+    &_input {
+
+    }
+  }
+
+  &_customerID {
+
+    &_text {
+
+    }
+
+    &_input {
+
+    }
+  }
+
   &_membership {
 
+    &_text {
+
+    }
 
     &_buttons {
 
@@ -34,6 +84,10 @@
         padding: 8px;
       }
     }
+  }
+
+  &_buttons {
+
   }
 }
 
@@ -47,4 +101,8 @@
 [type=radio] + img {
   cursor: pointer;
   padding: 8px;
+}
+
+[type=radio]:checked + img {
+  background-color: #acafb0;
 }
