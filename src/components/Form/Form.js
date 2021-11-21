@@ -77,17 +77,17 @@ export default function Form(props) {
                     Membership
                 </span>
                 <div className="form_membership_buttons">
-                    <label>
-                        <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
+                    <label className="form_membership_buttons_label">
                         <input type="radio" value="Classic" name="membership" id="classic"/> Classic
-                    </label>
-                    <label>
                         <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
+                    </label>
+                    <label className="form_membership_buttons_label">
                         <input type="radio" value="Silver" name="membership" id="silver" /> Silver
-                    </label>
-                    <label>
                         <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
+                    </label>
+                    <label className="form_membership_buttons_label">
                         <input type="radio" value="Gold" name="membership" id="gold"/> Gold
+                        <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                     </label>
                 </div>
             </div>

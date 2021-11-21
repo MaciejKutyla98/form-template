@@ -1,5 +1,3 @@
-@use '../../stylesheets/variables' as *;
-
 .imagePage {
   background-color: #ffd500;
   width: 100%;
@@ -11,7 +9,7 @@
   border-top-right-radius: 8px;
 
   @media (min-width: 900px) {
-    height: 100%;
+    height: 446px;
     flex-direction: column;
     border-top-left-radius: 32px;
     border-top-right-radius: 0px;

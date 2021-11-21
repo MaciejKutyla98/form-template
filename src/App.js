@@ -1,6 +1,6 @@
 import './App.scss';
 import ImagePage from "./components/ImagePage/ImagePage";
-import FormWrapper from "./components/FormWrapper/FormWrapper";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
               <ImagePage />
           </div>
           <div className="formTemplate_formWrapper">
-              <FormWrapper />
+              <Form />
           </div>
       </div>
   );

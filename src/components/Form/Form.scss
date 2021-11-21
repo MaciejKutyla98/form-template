@@ -1,31 +1,83 @@
 .form {
-  padding: 16px;
   color: #373D40;
+  width: 100%;
+  margin-left: 40px;
+
+  @media (min-width: 900px) {
+    margin-left: 71px;
+  }
 
   &_name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 16px;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+      margin-top: 53px;
+    }
 
     &_text {
+      padding: 4px;
+      width: 100px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
     }
 
     &_input {
+      padding: 4px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_content {
+        width: 250px;
+      }
     }
   }
 
   &_gender {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
 
     &_text {
+      padding: 4px;
+      width: 90px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+        line-height: 2.5;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
 
     &_buttons {
       display: flex;
+      padding: 4px;
+
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
 
       &_label {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
+        padding: 4px;
+
+        @media (min-width: 900px) {
+          padding: 8px;
+        }
       }
 
       &_male, &_female {
@@ -38,45 +90,137 @@
   }
 
   &_email {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
 
     &_text {
+      padding: 4px;
+      width: 100px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
     }
 
     &_input {
+      padding: 4px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_content {
+        width: 250px;
+      }
     }
   }
 
   &_mobile {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
 
     &_text {
+      padding: 4px;
+      width: 100px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
     }
 
     &_input {
+      padding: 4px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_content {
+        width: 250px;
+      }
     }
   }
 
   &_customerID {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
 
     &_text {
+      padding: 4px;
+      width: 100px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
     }
 
     &_input {
+      padding: 4px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_content {
+        width: 250px;
+      }
     }
   }
 
   &_membership {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
 
     &_text {
+      padding: 4px;
+      width: 90px;
 
+      @media (min-width: 900px) {
+        padding: 8px;
+        line-height: 2.5;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
 
     &_buttons {
+      display: flex;
+      padding: 4px;
+
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_label {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 4px;
+
+        @media (min-width: 900px) {
+          padding: 8px;
+        }
+      }
 
       &_img {
         background-color: #C7C7C7;
@@ -87,7 +231,38 @@
   }
 
   &_buttons {
+    display: flex;
+    align-items: center;
 
+    &_cancel {
+      background-color: #F5F8F9;
+      color: #000000;
+      border: none;
+      width: 79px;
+      height: 26.5px;
+      margin: 15px 10px 32px 50px;
+
+      @media (min-width: 900px) {
+        margin-top: 41px;
+        margin-left: 150px;
+      }
+    }
+
+    &_save {
+      background-color: #60E6C5;
+      margin-top: 41px;
+      color: #FFFFFF;
+      border: none;
+      width: 79px;
+      height: 26.5px;
+      margin-top: 15px;
+      margin-right: 10px;
+      margin-bottom: 32px;
+
+      @media (min-width: 900px) {
+        margin-top: 41px;
+      }
+    }
   }
 }
 

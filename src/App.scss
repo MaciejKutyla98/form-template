@@ -1,8 +1,12 @@
+body {
+    background-color: #acafb0;
+}
 .formTemplate {
     overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 
     @media (min-width: 900px) {
         flex-direction: row;
@@ -15,7 +19,6 @@
         justify-content: space-around;
 
         @media (min-width: 900px) {
-            margin: 32px;
             flex: 1;
             width: 33%;
         }
@@ -23,15 +26,20 @@
 
     &_formWrapper {
         background-color: white;
-
-        height: 100%;
+        width: 100%;
         flex: 1;
         order: 2;
         justify-content: space-around;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
 
         @media (min-width: 900px) {
             flex: 2;
             width: 66%;
+            height: 446px;
+            border-top-right-radius: 32px;
+            border-bottom-right-radius: 32px;
+            border-bottom-left-radius: 0px;
         }
     }
 }
