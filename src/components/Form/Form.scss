@@ -89,6 +89,37 @@
     }
   }
 
+  &_dateOfBirth {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+
+    &_text {
+      padding: 4px;
+      width: 100px;
+
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+    }
+
+    &_input {
+      padding: 4px;
+
+      @media (min-width: 900px) {
+        padding: 8px;
+      }
+
+      &_content {
+        width: 250px;
+      }
+    }
+  }
+
   &_email {
     display: flex;
     align-items: flex-start;
@@ -243,7 +274,7 @@
       margin: 15px 10px 32px 50px;
 
       @media (min-width: 900px) {
-        margin-top: 41px;
+        margin-top: 12px;
         margin-left: 150px;
       }
     }
@@ -260,7 +291,7 @@
       margin-bottom: 32px;
 
       @media (min-width: 900px) {
-        margin-top: 41px;
+        margin-top: 12px;
       }
     }
   }
