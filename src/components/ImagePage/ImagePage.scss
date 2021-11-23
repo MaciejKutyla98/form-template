@@ -9,7 +9,7 @@
   border-top-right-radius: 8px;
 
   @media (min-width: 900px) {
-    height: 446px;
+    height: 550px;
     flex-direction: column;
     border-top-left-radius: 32px;
     border-top-right-radius: 0px;
@@ -50,6 +50,10 @@
       width: 32px;
       height: 32px;
       font-size: 0;
+
+      @media (min-width: 900px) {
+        margin: 50px 122px 60px 122px;
+      }
     }
   }
 }

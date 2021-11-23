@@ -295,6 +295,12 @@
       }
     }
   }
+  &_validationError {
+    text-align: center;
+    color: #FF0000;
+    font-size: 12px;
+
+  }
 }
 
 [type=radio] {

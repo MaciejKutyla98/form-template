@@ -3,18 +3,18 @@ import './Form.scss';
 import female from '../../assets/female.png'
 import male from '../../assets/male.png'
 import card from "../../assets/card.png";
-import * as yup from 'yup';
 import {formSchema} from "../../validations/FormValidation";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 export default function Form(props) {
-        const { register, handleSubmit, errors } = useForm({
-            resolver: yupResolver(formSchema)
+        const { register, handleSubmit, formState: { errors }, reset} = useForm({
+            resolver: yupResolver(formSchema),
         });
 
         const submitForm = (data) => {
-            console.log(data);
+            console.log({data});
+            reset();
         };
 
     return (
@@ -28,8 +28,9 @@ export default function Form(props) {
                         <input type="text"
                                className="form_name_input_content"
                                placeholder="Type your name"
-                               ref={register}
+                               {...register('name')}
                         />
+                        <p className="form_validationError">{errors.name?.message}</p>
                     </div>
                 </div>
 
@@ -56,9 +57,10 @@ export default function Form(props) {
                     <div className="form_dateOfBirth_input">
                         <input type="text"
                                className="form_dateOfBirth_input_content"
-                               placeholder="01/02/1983"
-                               ref={register}
+                               placeholder="01-02-1983"
+                               {...register('dateOfBirth')}
                         />
+                        <p className="form_validationError">{errors.dateOfBirth?.message}</p>
                     </div>
                 </div>
 
@@ -70,8 +72,9 @@ export default function Form(props) {
                         <input type="text"
                                className="form_email_input_content"
                                placeholder="Type your email"
-                               ref={register}
+                               {...register('email')}
                         />
+                        <p className="form_validationError">{errors.email?.message}</p>
                     </div>
                 </div>
 
@@ -84,8 +87,9 @@ export default function Form(props) {
                         <input type="text"
                                className="form_mobile_input_content"
                                placeholder="Type your phone number"
-                               ref={register}
+                               {...register('mobile')}
                         />
+                        <p className="form_validationError">{errors.mobile?.message}</p>
                     </div>
                 </div>
 
@@ -97,8 +101,9 @@ export default function Form(props) {
                         <input type="text"
                                className="form_customerID_input_content"
                                placeholder="Type your customer ID"
-                               ref={register}
+                               {...register('customerID')}
                         />
+                        <p className="form_validationError">{errors.customerID?.message}</p>
                     </div>
                 </div>
 
@@ -126,9 +131,10 @@ export default function Form(props) {
                     <button className="form_buttons_cancel">
                         Cancel.
                     </button>
-                    <button className="form_buttons_save" type="submit">
-                        Save.
-                    </button>
+                    <input className="form_buttons_save"
+                           type="submit"
+                           value="Save"
+                    />
                 </div>
             </form>
         </div>

@@ -21,6 +21,7 @@ body {
         @media (min-width: 900px) {
             flex: 1;
             width: 33%;
+
         }
     }
 
@@ -36,10 +37,12 @@ body {
         @media (min-width: 900px) {
             flex: 2;
             width: 66%;
-            height: 446px;
+            height: 550px;
             border-top-right-radius: 32px;
             border-bottom-right-radius: 32px;
             border-bottom-left-radius: 0px;
+            overflow: hidden;
+            overflow-y: auto;
         }
     }
 }
