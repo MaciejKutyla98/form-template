@@ -131,9 +131,10 @@ export default function Form(props) {
                 </div>
 
                 <div className="form_buttons">
-                    <button className="form_buttons_cancel">
-                        Cancel.
-                    </button>
+                    <input className="form_buttons_cancel"
+                           type="reset"
+                           value="Cancel."
+                    />
                     <input className="form_buttons_save"
                            type="submit"
                            value="Save"
