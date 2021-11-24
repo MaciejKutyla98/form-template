@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Form.scss';
 import female from '../../assets/female.png'
 import male from '../../assets/male.png'
@@ -17,6 +17,7 @@ export default function Form(props) {
             reset();
         };
 
+
     return (
         <div className="form">
             <form onSubmit={handleSubmit(submitForm)}>
@@ -29,6 +30,7 @@ export default function Form(props) {
                                className="form_name_input_content"
                                placeholder="Type your name"
                                {...register('name')}
+                                ref={props.focusOnName}
                         />
                         <p className="form_validationError">{errors.name?.message}</p>
                     </div>
@@ -102,6 +104,7 @@ export default function Form(props) {
                                className="form_customerID_input_content"
                                placeholder="Type your customer ID"
                                {...register('customerID')}
+                               ref={props.focusOnCustomerID}
                         />
                         <p className="form_validationError">{errors.customerID?.message}</p>
                     </div>

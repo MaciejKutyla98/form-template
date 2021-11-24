@@ -20,7 +20,7 @@ export default function ImagePage(props) {
                 </span>
             </div>
             <div className="imagePage_button">
-                <button className="imagePage_button_content">
+                <button className="imagePage_button_content" onClick={() => props.onClick()}>
                     <img src={arrow} alt="arrow" width="8px" height="15px" />
                     Click me!
                 </button>
