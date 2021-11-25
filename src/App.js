@@ -14,7 +14,6 @@ function App() {
         } else {
             setFocusOnCustomerID.current.focus();
         }
-
     }
 
   return (

@@ -17,20 +17,20 @@ export default function Form(props) {
             reset();
         };
 
-
     return (
         <div className="form">
             <form onSubmit={handleSubmit(submitForm)}>
                 <div className="form_name">
-                <span className="form_name_text">
-                    Name
-                </span>
+                    <span className="form_name_text">
+                        Name
+                    </span>
                     <div className="form_name_input">
                         <input type="text"
                                className="form_name_input_content"
                                placeholder="Type your name"
+                               ref={props.focusOnName}
                                {...register('name')}
-                                ref={props.focusOnName}
+
                         />
                         <p className="form_validationError">{errors.name?.message}</p>
                     </div>
@@ -42,14 +42,15 @@ export default function Form(props) {
                 </span>
                     <div className="form_gender_buttons">
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Male" name="gender" id="male"/> Male
+                            <input type="radio" value="Male" name="gender" id="male" {...register('gender')}/> Male
                             <img src={male} alt="male" width="20px" height="20px" className="form_gender_buttons_male"/>
                         </label>
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Female" name="gender" id="female" /> Female
+                            <input type="radio" value="Female" name="gender" id="female" {...register('gender')}/> Female
                             <img src={female} alt="female" width="20px" height="20px" className="form_gender_buttons_female"/>
                         </label>
                     </div>
+                    <p className="form_validationError">{errors.gender?.message}</p>
                 </div>
 
                 <div className="form_dateOfBirth">
@@ -116,18 +117,19 @@ export default function Form(props) {
                 </span>
                     <div className="form_membership_buttons">
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Classic" name="membership" id="classic"/> Classic
+                            <input type="radio" value="Classic" name="membership" id="classic" {...register('membership')}/> Classic
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Silver" name="membership" id="silver" /> Silver
+                            <input type="radio" value="Silver" name="membership" id="silver" {...register('membership')}/> Silver
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Gold" name="membership" id="gold"/> Gold
+                            <input type="radio" value="Gold" name="membership" id="gold" {...register('membership')}/> Gold
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                     </div>
+                    <p className="form_validationError">{errors.membership?.message}</p>
                 </div>
 
                 <div className="form_buttons">
