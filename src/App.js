@@ -10,9 +10,9 @@ function App() {
 
     function handleFocus() {
         if (!isMobile) {
-            setFocusOnName.current.focus();
+            setFocusOnName.current?.focus?.();
         } else {
-            setFocusOnCustomerID.current.focus();
+            setFocusOnCustomerID.current?.focus?.();
         }
     }
 

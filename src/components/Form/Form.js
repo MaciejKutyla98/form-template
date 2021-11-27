@@ -28,8 +28,9 @@ export default function Form(props) {
                         <input type="text"
                                className="form_name_input_content"
                                placeholder="Type your name"
-                               ref={props.focusOnName}
                                {...register('name')}
+                               ref={props.focusOnName}
+
 
                         />
                         <p className="form_validationError">{errors.name?.message}</p>
