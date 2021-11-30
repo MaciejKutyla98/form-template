@@ -43,11 +43,11 @@ export default function Form(props) {
                 </span>
                     <div className="form_gender_buttons">
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Male" name="gender" id="male" {...register('gender')}/> Male
+                            <input type="radio" value="Male" name="gender" id="male" className="form_gender_buttons_label_male" {...register('gender')}/> Male
                             <img src={male} alt="male" width="20px" height="20px" className="form_gender_buttons_male"/>
                         </label>
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Female" name="gender" id="female" {...register('gender')}/> Female
+                            <input type="radio" value="Female" name="gender" id="female" className="form_gender_buttons_label_female" {...register('gender')}/> Female
                             <img src={female} alt="female" width="20px" height="20px" className="form_gender_buttons_female"/>
                         </label>
                     </div>
@@ -98,18 +98,18 @@ export default function Form(props) {
                 </div>
 
                 <div className="form_customerID">
-                <span className="form_customerID_text">
-                    Customer ID
-                </span>
-                    <div className="form_customerID_input">
-                        <input type="text"
-                               className="form_customerID_input_content"
-                               placeholder="Type your customer ID"
-                               {...register('customerID')}
-                               ref={props.focusOnCustomerID}
-                        />
-                        <p className="form_validationError">{errors.customerID?.message}</p>
-                    </div>
+                    <span className="form_customerID_text">
+                        Customer ID
+                    </span>
+                        <div className="form_customerID_input">
+                            <input type="text"
+                                   className="form_customerID_input_content"
+                                   placeholder="Type your customer ID"
+                                   {...register('customerID')}
+                                   ref={props.focusOnCustomerID}
+                            />
+                            <p className="form_validationError">{errors.customerID?.message}</p>
+                        </div>
                 </div>
 
                 <div className="form_membership">

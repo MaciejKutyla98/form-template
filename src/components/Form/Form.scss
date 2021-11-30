@@ -36,6 +36,9 @@
 
       &_content {
         width: 250px;
+        background-color: #F5F8F9;
+        padding: 8px 0px 9px 10px;
+        border: 1px solid #CAD7DD;
       }
     }
   }
@@ -74,6 +77,7 @@
         align-items: center;
         flex-direction: row-reverse;
         padding: 4px;
+        color: #B1BFCD;
 
         @media (min-width: 900px) {
           padding: 8px;
@@ -116,6 +120,9 @@
 
       &_content {
         width: 250px;
+        background-color: #F5F8F9;
+        padding: 8px 0px 9px 10px;
+        border: 1px solid #CAD7DD;
       }
     }
   }
@@ -147,6 +154,9 @@
 
       &_content {
         width: 250px;
+        background-color: #F5F8F9;
+        padding: 8px 0px 9px 10px;
+        border: 1px solid #CAD7DD;
       }
     }
   }
@@ -178,6 +188,9 @@
 
       &_content {
         width: 250px;
+        background-color: #F5F8F9;
+        padding: 8px 0px 9px 10px;
+        border: 1px solid #CAD7DD;
       }
     }
   }
@@ -209,6 +222,9 @@
 
       &_content {
         width: 250px;
+        background-color: #F5F8F9;
+        padding: 8px 0px 9px 10px;
+        border: 1px solid #CAD7DD;
       }
     }
   }
@@ -250,6 +266,10 @@
 
         @media (min-width: 900px) {
           padding: 8px;
+        }
+
+        &_male, &_female {
+          margin-left: 11px;
         }
       }
 
@@ -318,3 +338,5 @@
 [type=radio]:checked + img {
   background-color: #acafb0;
 }
+
+
