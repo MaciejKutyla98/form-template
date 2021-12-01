@@ -43,11 +43,11 @@ export default function Form(props) {
                 </span>
                     <div className="form_gender_buttons">
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Male" name="gender" id="male" className="form_gender_buttons_label_male" {...register('gender')}/> Male
+                            <input type="radio" value="Male" name="gender" id="male" className="form_gender_buttons_label_male" {...register('gender')}/> <span className="form_gender_buttons_label_male" >Male</span>
                             <img src={male} alt="male" width="20px" height="20px" className="form_gender_buttons_male"/>
                         </label>
                         <label className="form_gender_buttons_label">
-                            <input type="radio" value="Female" name="gender" id="female" className="form_gender_buttons_label_female" {...register('gender')}/> Female
+                            <input type="radio" value="Female" name="gender" id="female"  {...register('gender')}/> <span className="form_gender_buttons_label_female">Female</span>
                             <img src={female} alt="female" width="20px" height="20px" className="form_gender_buttons_female"/>
                         </label>
                     </div>
@@ -118,15 +118,15 @@ export default function Form(props) {
                 </span>
                     <div className="form_membership_buttons">
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Classic" name="membership" id="classic" {...register('membership')}/> Classic
+                            <input type="radio" value="Classic" name="membership" id="classic" {...register('membership')}/>  <span className="form_membership_buttons_label_text"> Classic </span>
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Silver" name="membership" id="silver" {...register('membership')}/> Silver
+                            <input type="radio" value="Silver" name="membership" id="silver" {...register('membership')}/>  <span className="form_membership_buttons_label_text"> Silver </span>
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                         <label className="form_membership_buttons_label">
-                            <input type="radio" value="Gold" name="membership" id="gold" {...register('membership')}/> Gold
+                            <input type="radio" value="Gold" name="membership" id="gold" {...register('membership')}/> <span className="form_membership_buttons_label_text"> Gold </span>
                             <img src={card} alt="card" width="20px" height="20px" className="form_membership_buttons_img"/>
                         </label>
                     </div>
@@ -136,7 +136,7 @@ export default function Form(props) {
                 <div className="form_buttons">
                     <input className="form_buttons_cancel"
                            type="reset"
-                           value="Cancel."
+                           value="Cancel"
                     />
                     <input className="form_buttons_save"
                            type="submit"

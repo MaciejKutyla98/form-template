@@ -31,7 +31,7 @@
       padding: 4px;
 
       @media (min-width: 900px) {
-        padding: 8px;
+        padding: 2px;
       }
 
       &_content {
@@ -39,6 +39,11 @@
         background-color: #F5F8F9;
         padding: 8px 0px 9px 10px;
         border: 1px solid #CAD7DD;
+        border-radius: 2px;
+
+        &:focus {
+          outline: 1px solid #a6b6bd;
+        }
       }
     }
   }
@@ -82,6 +87,12 @@
         @media (min-width: 900px) {
           padding: 8px;
         }
+
+        &_male, &_female {
+          padding-left: 12px;
+          padding-right: 24px;
+          font-size: 12px;
+        }
       }
 
       &_male, &_female {
@@ -115,7 +126,7 @@
       padding: 4px;
 
       @media (min-width: 900px) {
-        padding: 8px;
+        padding: 2px;
       }
 
       &_content {
@@ -123,6 +134,11 @@
         background-color: #F5F8F9;
         padding: 8px 0px 9px 10px;
         border: 1px solid #CAD7DD;
+        border-radius: 2px;
+
+        &:focus {
+          outline: 1px solid #a6b6bd;
+        }
       }
     }
   }
@@ -149,7 +165,7 @@
       padding: 4px;
 
       @media (min-width: 900px) {
-        padding: 8px;
+        padding: 2px;
       }
 
       &_content {
@@ -157,6 +173,11 @@
         background-color: #F5F8F9;
         padding: 8px 0px 9px 10px;
         border: 1px solid #CAD7DD;
+        border-radius: 2px;
+
+        &:focus {
+          outline: 1px solid #a6b6bd;
+        }
       }
     }
   }
@@ -183,7 +204,7 @@
       padding: 4px;
 
       @media (min-width: 900px) {
-        padding: 8px;
+        padding: 2px;
       }
 
       &_content {
@@ -191,6 +212,11 @@
         background-color: #F5F8F9;
         padding: 8px 0px 9px 10px;
         border: 1px solid #CAD7DD;
+        border-radius: 2px;
+
+        &:focus {
+          outline: 1px solid #a6b6bd;
+        }
       }
     }
   }
@@ -217,7 +243,7 @@
       padding: 4px;
 
       @media (min-width: 900px) {
-        padding: 8px;
+        padding: 2px;
       }
 
       &_content {
@@ -225,6 +251,11 @@
         background-color: #F5F8F9;
         padding: 8px 0px 9px 10px;
         border: 1px solid #CAD7DD;
+        border-radius: 2px;
+
+        &:focus {
+          outline: 1px solid #a6b6bd;
+        }
       }
     }
   }
@@ -268,8 +299,11 @@
           padding: 8px;
         }
 
-        &_male, &_female {
-          margin-left: 11px;
+        &_text {
+          color: #B1BFCD;
+          padding-left: 12px;
+          padding-right: 24px;
+          font-size: 12px;
         }
       }
 
@@ -292,6 +326,9 @@
       width: 79px;
       height: 26.5px;
       margin: 15px 10px 32px 50px;
+      text-transform: uppercase;
+      font-size: 8px;
+      color: #555d61;
 
       @media (min-width: 900px) {
         margin-top: 12px;
@@ -309,6 +346,8 @@
       margin-top: 15px;
       margin-right: 10px;
       margin-bottom: 32px;
+      text-transform: uppercase;
+      font-size: 8px;
 
       @media (min-width: 900px) {
         margin-top: 12px;
@@ -316,10 +355,9 @@
     }
   }
   &_validationError {
-    text-align: center;
+    text-align: left;
     color: #FF0000;
-    font-size: 12px;
-
+    font-size: 8px;
   }
 }
 
@@ -330,13 +368,13 @@
   height: 0;
 }
 
-[type=radio] + img {
+[type=radio] ~ img {
   cursor: pointer;
   padding: 8px;
 }
 
-[type=radio]:checked + img {
-  background-color: #acafb0;
+[type=radio]:checked ~ img {
+  background-color: #6e787d;
 }
 
 

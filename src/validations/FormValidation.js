@@ -7,29 +7,29 @@ const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2
 
 export const formSchema = yup.object().shape({
     name: yup.string()
-        .min(3, 'The name must contain at least 3 letters')
-        .max(255, 'Name is too long')
-        .required('Name is required'),
+        .min(3, 'the name must contain at least 3 letters')
+        .max(255, 'name is too long')
+        .required('name is required'),
     gender: yup.string()
         .typeError('*')
-        .required('Email is required'),
+        .required('email is required'),
     dateOfBirth: yup.date()
-        .typeError('Date have to be in "dd-MM-yyyy" format')
+        .typeError('date have to be in "dd-MM-yyyy" format')
         .transform(parseDateString)
-        .max(today, 'Are you a traveler in time? :)'),
+        .max(today, 'are you a traveler in time? :)'),
     email: yup.string()
-        .email('Your email is not valid')
-        .required('Email is required'),
+        .email('your email is not valid')
+        .required('email is required'),
     mobile: yup.string()
         .phone()
-        .required('Phone number is required'),
+        .required('phone number is required'),
     customerID: yup.number()
-        .positive('CustomerID cannot be negative')
-        .integer('CustomerID has to be integer')
-        .typeError('CustomerID is required'),
+        .positive('customerID cannot be negative')
+        .integer('customerID has to be integer')
+        .typeError('customerID is required'),
     membership: yup.string()
         .typeError('*')
-        .required('Membership is required')
+        .required('membership is required')
 })
 
 export function parseDateString(value, originalValue) {

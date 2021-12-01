@@ -1,27 +1,48 @@
+@font-face {
+    font-family: "SFNS_Display_Regular";
+    src: url("assets/SFNS Display Regular.woff2") format("woff2");
+}
+
+html {
+    @media (min-width: 900px) {
+        height: 100%;
+    }
+}
+
 body {
     background-color: #acafb0;
+    font-family: SFNS_Display_Regular, sans-serif;
+
+    @media (min-width: 900px) {
+        height: 100%;
+    }
 }
+#root {
+    @media (min-width: 900px) {
+        height: 100%;
+    }
+}
+
 .formTemplate {
     overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
 
-
     @media (min-width: 900px) {
         flex-direction: row;
+        height: 100%;
     }
 
     &_imagePage {
         width: 100%;
         flex: 1;
         order: 1;
-        justify-content: space-around;
 
         @media (min-width: 900px) {
             flex: 1;
             width: 33%;
-
+            height: 100%;
         }
     }
 
@@ -37,7 +58,7 @@ body {
         @media (min-width: 900px) {
             flex: 2;
             width: 66%;
-            height: 600px;
+            height: 100%;
             border-top-right-radius: 32px;
             border-bottom-right-radius: 32px;
             border-bottom-left-radius: 0px;
