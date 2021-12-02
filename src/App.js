@@ -6,13 +6,15 @@ import {isMobile} from 'react-device-detect';
 
 function App() {
     const setFocusOnName = useRef(null);
-    const setFocusOnCustomerID = useRef(null);
+    const setFocusOnForm = useRef(null);
 
     function handleFocus() {
         if (!isMobile) {
             setFocusOnName.current?.focus?.();
         } else {
-            setFocusOnCustomerID.current?.focus?.();
+            setFocusOnForm.current?.scrollIntoView({
+                behavior: "smooth",
+            });
         }
     }
 
@@ -23,10 +25,9 @@ function App() {
                   handleFocus();
               }}/>
           </div>
-          <div className="formTemplate_formWrapper">
+          <div className="formTemplate_formWrapper" ref={setFocusOnForm}>
               <Form
                   focusOnName={setFocusOnName}
-                  focusOnCustomerID={setFocusOnCustomerID}
               />
           </div>
       </div>

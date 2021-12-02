@@ -106,7 +106,7 @@ export default function Form(props) {
                                    className="form_customerID_input_content"
                                    placeholder="Type your customer ID"
                                    {...register('customerID')}
-                                   ref={props.focusOnCustomerID}
+
                             />
                             <p className="form_validationError">{errors.customerID?.message}</p>
                         </div>
